@@ -12,7 +12,6 @@ export const CartContext = ({ children }) => {
   function addToCart({ product }) {
     if (cart.includes(product)) {
       toast.error("Item already in cart");
-
       return;
     } else {
       toast.success("Item added to cart");
